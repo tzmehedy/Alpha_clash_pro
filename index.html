@@ -32,7 +32,7 @@
       <!-- Home section End -->
 
       <!-- Play section start -->
-      <section class="paly_ground_container">
+      <section class="paly_ground_container hidden">
         <div class="flex flex-col items-center gap-10 pt-10">
           <!-- Screen -->
           <div
@@ -101,7 +101,13 @@
         </div>
       </section>
       <!-- Play section end -->
-      <section class="score_container"></section>
+      <section class="score_container flex justify-center items-center min-h-screen hidden">
+        <div class="bg-[#FFFFFF33] p-4 text-center space-y-5 rounded-xl">
+          <h1 class="font-extrabold text-5xl">Score: <span class="font-extrabold">40</span></h1>
+          <button class="btn btn-white text-black">Play Again</button>
+          <p>Practice will make you Pro</p>
+        </div>
+      </section>
     </main>
   </body>
 </html>
