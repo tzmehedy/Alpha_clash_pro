@@ -18,31 +18,31 @@
       class="min-h-screen bg-[#010313] bg-[url(images/background.png)] bg-no-repeat bg-center text-white"
     >
       <!-- Home Section Start -->
-      <section
-        class="home_container flex justify-center items-center min-h-screen hidden"
-      >
+      <section id="home_container" class="flex justify-center items-center min-h-screen">
         <div class="flex flex-col items-center gap-8">
           <h1 class="poppins-regular font-bold text-8xl uppercase">
             Alphabet clash
           </h1>
           <p>Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-          <button class="btn btn-white">Play Now</button>
+          <button onclick="play()" class="btn btn-white">Play Now</button>
         </div>
       </section>
       <!-- Home section End -->
 
       <!-- Play section start -->
-      <section class="paly_ground_container hidden">
+      <section id="paly_ground_container" class=" hidden">
         <div class="flex flex-col items-center gap-10 pt-10">
           <!-- Screen -->
           <div
             class="artboard artboard-horizontal phone-6 border-[20px] border-[#010313CC] rounded-2xl bg-[#FFFFFF33]"
           >
             <div class="flex justify-center">
-                <p class="bg-[#2F2941] px-10 py-2 rounded-b-xl">Don't watch keyboard  while playing...</p>
+              <p class="bg-[#2F2941] px-10 py-2 rounded-b-xl">
+                Don't watch keyboard while playing...
+              </p>
             </div>
             <div class="flex justify-center items-center min-h-full">
-                <p class="font-bold text-9xl">Y</p>
+              <p id="alphabetShow" class="font-bold text-9xl text-black uppercase">Y</p>
             </div>
           </div>
 
@@ -86,14 +86,18 @@
           <!-- life score -->
           <div class="w-3/4">
             <div class="flex justify-between">
-              <button class="btn bg-[#894189] text-white border-none rounded-full">
+              <button
+                class="btn bg-[#894189] text-white border-none rounded-full"
+              >
                 life
-                <img src="./images/heart.svg" alt="">
+                <img src="./images/heart.svg" alt="" />
                 <span>1</span>
               </button>
-              <button class="btn bg-[#360490] text-white border-none rounded-full">
+              <button
+                class="btn bg-[#360490] text-white border-none rounded-full"
+              >
                 Score
-                <img src="./images/dolar.svg" alt="">
+                <img src="./images/dolar.svg" alt="" />
                 <span>1</span>
               </button>
             </div>
@@ -101,13 +105,20 @@
         </div>
       </section>
       <!-- Play section end -->
-      <section class="score_container flex justify-center items-center min-h-screen hidden">
+      <section
+        class="score_container flex justify-center items-center min-h-screen hidden"
+      >
         <div class="bg-[#FFFFFF33] p-4 text-center space-y-5 rounded-xl">
-          <h1 class="font-extrabold text-5xl">Score: <span class="font-extrabold">40</span></h1>
+          <h1 class="font-extrabold text-5xl">
+            Score: <span class="font-extrabold">40</span>
+          </h1>
           <button class="btn btn-white text-black">Play Again</button>
           <p>Practice will make you Pro</p>
         </div>
       </section>
     </main>
+
+    <script src="./js/utility.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
