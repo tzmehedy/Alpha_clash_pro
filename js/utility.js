@@ -8,6 +8,12 @@ function removeHiddenById(id){
     removeHiddenContainer.classList.remove('hidden');
 }
 
+function setBackGroundInKeyBoard(id){
+    const getAlphabetSection = document.getElementById(id);
+    getAlphabetSection.classList.add("bg-[#FFA500]");
+
+}
+
 function getAlphabet(){
     const alphabetInString = 'abcdefghijklmnopqrstuvwxyz';
     const splitAlphabetInString = alphabetInString.split("");

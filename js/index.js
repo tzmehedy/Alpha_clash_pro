@@ -2,7 +2,7 @@ function continueGaming(){
     const alphabet = getAlphabet();
     const currentAlphabet = document.getElementById("alphabetShow");
     currentAlphabet.innerText = alphabet;
-    
+    setBackGroundInKeyBoard(alphabet);  
 }
 
 
